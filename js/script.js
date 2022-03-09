@@ -6,7 +6,6 @@ const drinkList = document.querySelectorAll('li');
 const searchEngine = e => {
 
     const text = e.target.value.toLowerCase();
-    console.log(text);
 
     drinkList.forEach(el => {
         const task = el.textContent;
@@ -19,5 +18,5 @@ const searchEngine = e => {
     })
 }
 
-drinkSearch.addEventListener('keyup', searchEngine)
+drinkSearch.addEventListener('keyup', searchEngine);
 
